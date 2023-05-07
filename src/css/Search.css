@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+/* UTILITY CLASSES */
+
+.navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.disha-gif{
+  height: 80px;
+  width: 80px;
+
+}
+.nav-options{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-options>div>h3{
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px; 
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.nav-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.dark-blue{
+color: rgb(20, 54, 78);
+}
+
+.main-container {
+  padding: 1rem;
+  padding-left: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  gap: 10px;
+  background-image: url("../static/train.jpg");
+  background-size:contain;
+  background-position:initial;
+  background-repeat: no-repeat;
+  height: 48rem;
+}
+
+
+
+
+
+
+
+
+.form{
+  padding: 10px;
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+   .header{
+    margin-bottom: 15px;
+     width:100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+   }
+   
+   
+   .booking-form{
+     width:36vw;
+     height: 50%;
+     padding:10px;
+     background-color: #fff;
+     border-radius: 5px;
+   }
+ 
+ 
+   .first-part{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+   }
+   
+.form label {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+   }
+   
+.form input[type="text"],
+.form input[type="date"],
+.form select {
+     padding: 5px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     margin-top: 5px;
+   }
+   
+.form button {
+     background-color: #0077c2;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 20px;
+     margin-top: 10px;
+     cursor: pointer;
+   }
+   
+.form button:hover {
+     background-color: #0060a9;
+   }
+   
