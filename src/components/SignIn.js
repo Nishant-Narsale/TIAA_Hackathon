@@ -33,9 +33,7 @@ function SignIn() {
           try {
               const docRef = addDoc(collection(db, "usersCollection"), {
                   uid: registeredUser.user.uid,
-                  is_admin: false,
-                  first: "Nishant",
-                  last: "Narsale"
+                  is_admin: false
               }).then(
                   console.log("Document written")
               );

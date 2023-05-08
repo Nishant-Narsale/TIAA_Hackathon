@@ -215,38 +215,59 @@ button:hover {
   align-items: center;
   padding: 10px;
   gap: 20px;
-  border-bottom: 1px solid #ccc;
+}
+.coaches {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .coach {
   display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.coach:hover {
-  background-color: #d9dedb;
-}
-
-.coach.selected {
-  background-color: #0077cc;
-  color: #fff;
+  gap: 10px;
+  font-size: 14px;
 }
 
 .coach input[type="radio"] {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.coach.selected::before {
-  content: "\2022";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+.coach input[type="radio"]:checked + span {
+  color: white;
+  background-color: #0077ff;
 }
+
+.coach span {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.num-tickets{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.num-tickets input{
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.num-tickets input:focus{
+  outline: auto;
+}
+
 
 /* .cust-action {
   width: 100%;
@@ -264,10 +285,39 @@ button:hover {
   align-items: center;
 }
 
+.cust-action > button{
+  width: 200px;
+}
+
 .cust-action > button:hover {
-  border: 2px solid rgba(19, 173, 11, 0.81);
   border-radius: 5px;
   cursor: pointer;
 }
 
- 
+/* .cust-action button {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+.cust-action button:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+.cust-action button:focus {
+  outline: none;
+}
+ */

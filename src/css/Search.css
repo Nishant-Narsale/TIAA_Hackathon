@@ -65,14 +65,17 @@ color: rgb(20, 54, 78);
   align-items: center;
   width: 100vw;
   gap: 10px;
-  background-image: url("../static/train.jpg");
+  background-image: url("../static/home_page_train.jpg");
   background-size:contain;
   background-position:initial;
   background-repeat: no-repeat;
   height: 48rem;
 }
 
-
+.logo{
+  height: 60px;
+  border-radius: 50%;
+}
 
 
 

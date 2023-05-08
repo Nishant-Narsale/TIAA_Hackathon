@@ -4,6 +4,7 @@ import { auth } from '../firebase'
 import { signOut } from "firebase/auth";
 import { useHistory } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import logoImg from '../static/logo.jpeg';
 
 
 
@@ -23,7 +24,7 @@ const Search=(props)=>{
 
     const handleSearch = (event) => {
       event.preventDefault();
-      console.log(source, destination, date);
+      // console.log(source, destination, date);
       history.push('/trainlist');
     }
 
@@ -34,10 +35,13 @@ const Search=(props)=>{
     return (
     <>
       <nav className='navbar'>
-        <div><img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"></img></div>
+        {/* <div><img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"></img></div> */}
+        <div><img className='logo' src={logoImg}></img></div>
         <div class="nav-options ">
-          <div class="dark-blue bold"><h3>REGISTER</h3></div>
-          <div class="dark-blue bold"><h3>TRAINS</h3></div>
+          {user?
+            <div class="dark-blue bold" onClick={handleSignOut}><h3>SIGN OUT</h3></div>
+            : <div class="dark-blue bold" onClick={() => history.push('/login')}><h3>REGISTER/LOGIN</h3></div>
+          }
           <div class="dark-blue bold"><h3>CONTACT US</h3> </div>
         </div>
         <div class="nav-left">
@@ -48,9 +52,9 @@ const Search=(props)=>{
        <main className='main-container'>
         <div class="booking-form">
             <div class="header">
-              <img src="https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg" alt="Train Image" />
+              {/* <img src="https://www.irctc.co.in/nget/assets/images/logo_top_eng.jpg" alt="Train Image" /> */}
               <h2>Book Ticket</h2>
-              <img src="https://www.irctc.co.in/nget/assets/images/G20_Logo.png" alt="Indian Railway Logo" />
+              {/* <img src="https://www.irctc.co.in/nget/assets/images/G20_Logo.png" alt="Indian Railway Logo" /> */}
             </div>
             <form className='form'>
               <div class="first-part">
