@@ -4,6 +4,7 @@ import Search from './components/Search';
 import DataUpload from './components/DataUpload'
 import New from './components/New'
 import TrainList from './components/TrainList'
+import SearchTrain  from './components/SearchTrain';
 import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <Router>
-        <Switch>
+      <Switch>
           <Route exact path="/"><Search setDate={setDate} setDestination={setDestination} setSource={setSource} date={date} source={source} destination={destination} /></Route>
           <Route exact path="/login"><SignIn /></Route>
           <Route exact path="/trainlist"><TrainList date={date} source={source} destination={destination} /></Route>

@@ -63,17 +63,19 @@ const Search=(props)=>{
                 Source:
                 <input type="text" name="source" value={source} onChange={(e) => setSource(e.target.value)} />
               </label>
-              <br />
+              {/* <br /> */}
               <label>
                 Destination:
                 <input type="text" name="destination" value={destination} onChange={(e) => setDestination(e.target.value)} />
               </label>
-              </div>
-              <div>
+              {/* </br> */}
               <label>
                 Date:
                 <input type="date" name="date" value={date} onChange={(e) => setDate(e.target.value)}/>
               </label>
+              </div>
+              <div>
+             
               {/* <br />
               <label>
                 Class:
